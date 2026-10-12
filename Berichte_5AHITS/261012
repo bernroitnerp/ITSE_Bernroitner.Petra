@@ -1,0 +1,144 @@
+Klasse: 5AHITS
+Name: Bernroitner Petra, Krottenhammer Sarah
+Fach: ITSE
+Datum: 12.10.2026
+
+--- 
+# Wiederholung PHP Prob
+
+**1. Cheat Sheet der wichtigsten PHP Befehle und Konstrukte.**
+
+*Php Syntax*
+```php
+<?php
+//PHP code
+?>
+```
+
+*Variablen und Ausgabe*
+```php
+$txt = "W3Schools.com";
+echo "I love $txt!";
+echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+```
+
+*Strings*
+```php
+$x = "Hello";
+$y = "World";
+$z = $x . " " . $y;
+echo $z;
+```
+
+*Konstanten*
+`define(CONSTANT_NAME, value);`
+
+*Klassen*
+```php
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message() {
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
+$myCar = new Car("red", "Volvo");
+var_dump($myCar);
+```
+
+
+*Kommentare*
+```php
+// Einzeiler
+
+/* 
+mehrere 
+Zeilen
+*/
+```
+
+*Bedingungen*
+```php
+if (5 > 3) {
+  echo "Have a good day!";
+}
+```
+
+*Schleifen*
+```php
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+
+foreach ($namen as $name) {
+    echo $name;
+}
+```
+*Arrays*
+```php
+$cars = array("Volvo", "BMW", "Toyota");
+echo $cars[0]; //1. Element ausgeben
+```
+
+*Funktionen*
+```php
+//mit Parameter
+function addieren($a, $b) {
+    return $a + $b;
+}
+
+//ohne Parameter
+function myMessage() {
+  echo "Hello world!";
+}
+
+//Aufrufen
+myMessage();
+```
+
+*Switch Cases*
+```php
+switch (expression) {
+  case label1:
+    //code block
+    break;
+  case label2:
+    //code block;
+    break;
+  case label3:
+    //code block
+    break;
+  default:
+    //code block
+}
+```
+
+*Wichtige Befehle*
+- echo – gibt Inhalte aus.
+- var_dump() - gibt den Datentyp und den Wert aus
+- isset() – prüft, ob eine Variable gesetzt und nicht null ist.
+- empty() – prüft, ob ein Wert als leer gilt.
+- count() – zählt die Elemente eines Arrays.
+
+*Superglobals*
+Superglobals sind vordefinierte Variablen in PHP, die in allen Gültigkeitsbereichen verfügbar sind.
+- `$_GET:` Liest Daten aus URL-Parametern.
+- `$_POST:` Liest per POST übertragene Formulardaten.
+- `$_SERVER:` Enthält Informationen über den Server und die aktuelle Anfrage.
+- `$_SESSION:` Speichert benutzerbezogene Daten über mehrere Seitenaufrufe hinweg.
+- `$_COOKIE:` Liest Cookie-Daten aus.
+- `$_FILES:` Enthält Informationen zu hochgeladenen Dateien.
+- `$_ENV:` Enthält Umgebungsvariablen.
+- `$GLOBALS:` Ermöglicht den Zugriff auf globale Variablen.
+- `$_REQUEST:` Kann GET-, POST- und Cookie-Daten enthalten, abhängig von der PHP-Konfiguration.
+
+
+*Quellenverzeichnis*
+https://www.w3schools.com/php/
+https://www.php.net/manual/de/langref.php 
+https://www.php.net/manual/de/language.control-structures.php 
